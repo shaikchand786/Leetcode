@@ -1,7 +1,7 @@
 class Solution {
     public static int mySqrt(int x) {
       
-      long i = 0;
+      long i = 0;   //to avoid 'integer overflow'
 
         while (i * i <= x) {
             i++;
