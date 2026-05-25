@@ -4,15 +4,13 @@ class Solution {
 
         while (x != 0) 
         {
-            int digit = x % 10; //Extract last digit using % 10
-            x = x / 10;     //Remove last digit using / 10
+            int digit = x % 10; //Extract last digit using '% 10'
+            x = x / 10;     //Remove last digit using '/ 10'
 
             // Check for overflow before multiplying by 10
-            if (reversed > Integer.MAX_VALUE / 10 || 
-                reversed < Integer.MIN_VALUE / 10) {
+            if (reversed > Integer.MAX_VALUE / 10 || reversed < Integer.MIN_VALUE / 10) {
                 return 0;
             }
-
             reversed = reversed * 10 + digit;
         }
         return reversed;
@@ -27,5 +25,8 @@ class Solution {
         System.out.println("Input: " + x1 + " Output: " + reverse(x1));
         System.out.println("Input: " + x2 + " Output: " + reverse(x2));
         System.out.println("Input: " + x3 + " Output: " + reverse(x3));
+
+        // Reverse using StringBuilder built-in method:
+        //String reversedStr = new StringBuilder(str).reverse().toString();
     }
 }
