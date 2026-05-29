@@ -14,8 +14,8 @@ class Solution:
 obj = Solution()
 
 # Example Inputs
-s1 = "A man, a plan, a canal: Panama"
-s2 = "race a car"
+s1 = "Madam"
+s2 = "my name is Aman"
 s3 = " "
 
 # Print Outputs
